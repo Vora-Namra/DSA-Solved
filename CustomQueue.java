@@ -3,29 +3,24 @@ public class CustomQueue {
     int size;
     int arr[];
 
-    // Default constructor with a queue size of 10
     CustomQueue() {
         this.size = 10; 
         this.arr = new int[size];
     }
 
-    // Constructor with a custom queue size
     CustomQueue(int size) {
         this.size = size;
         this.arr = new int[size];
     }
 
-    // Check if the queue is empty
     public boolean isEmpty() {
         return end == -1;
     }
 
-    // Check if the queue is full
     public boolean isFull() {
         return end == size - 1;
     }
 
-    // Insert an element into the queue
     public boolean insert(int data) {
         if (isFull()) {
             System.out.println("Queue is full");
@@ -43,7 +38,6 @@ public class CustomQueue {
             return Integer.MIN_VALUE; // Returns a marker for an empty queue
         }
         int start = arr[0];
-        // Shift elements to the left to fill the gap
         for (int i = 1; i <= end; i++) {
             arr[i - 1] = arr[i];
         }
@@ -51,7 +45,6 @@ public class CustomQueue {
         return start;
     }
 
-    // Get the first element without removing it
     public int peek() {
         if (isEmpty()) {
             return Integer.MIN_VALUE; // Indicator for empty queue
@@ -59,7 +52,6 @@ public class CustomQueue {
         return arr[0];
     }
 
-    // Main method to test the queue
     public static void main(String[] args) {
         CustomQueue q = new CustomQueue();
         q.insert(1);
