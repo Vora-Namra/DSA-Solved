@@ -1,3 +1,4 @@
+package Pattern;
 public class InvertedNumPyramid {
     public static void main(String[] args) {
         int num=5;

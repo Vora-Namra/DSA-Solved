@@ -1,3 +1,4 @@
+package Pattern;
 public class NumPrintPattern {
     public static void main(String[] args) {
         int star=1;

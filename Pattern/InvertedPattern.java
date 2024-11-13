@@ -1,3 +1,4 @@
+package Pattern;
 public class InvertedPattern{
     public static void main(String[] args) {
         int num = 4;

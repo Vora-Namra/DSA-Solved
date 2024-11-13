@@ -1,3 +1,4 @@
+package Pattern;
 public class Pattern2 {
     public static void main(String[] args) {
         int num=5;

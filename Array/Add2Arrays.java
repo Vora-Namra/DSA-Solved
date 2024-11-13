@@ -1,4 +1,4 @@
-public class Add2Arrays {
+class Add2Arrays {
     public static void main(String[] args) {
         int one[] = {9,9,5,8};
         int two[] = {6,7};

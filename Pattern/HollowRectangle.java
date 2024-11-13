@@ -1,3 +1,4 @@
+package Pattern;
 public class HollowRectangle {
 
    public static void Hollow_rect(int row,int col){
