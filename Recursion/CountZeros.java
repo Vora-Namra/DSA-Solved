@@ -12,7 +12,6 @@ public class CountZeros {
     }
     public static void main(String[] args) {
         int num = 100202003;
-        int res = 0;
         System.out.println(countZeros(num,0));
     }
 }
